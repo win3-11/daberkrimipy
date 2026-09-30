@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="arenaSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#450a0a"/>
+      <stop offset="60%" stop-color="#881337"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+    <filter id="redGlow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#arenaSky)"/>
+
+  <!-- Colosseum Outer Wall Archs -->
+  <rect x="50" y="160" width="700" height="150" fill="#18181b" stroke="#3f3f46" stroke-width="3"/>
+  
+  <!-- Arches in wall -->
+  <path d="M 80,310 L 80,220 C 80,180 130,180 130,220 L 130,310 Z" fill="#09090b"/>
+  <path d="M 160,310 L 160,220 C 160,180 210,180 210,220 L 210,310 Z" fill="#09090b"/>
+  <path d="M 240,310 L 240,220 C 240,180 290,180 290,220 L 290,310 Z" fill="#09090b"/>
+  <path d="M 320,310 L 320,220 C 320,180 370,180 370,220 L 370,310 Z" fill="#09090b"/>
+  <path d="M 430,310 L 430,220 C 430,180 480,180 480,220 L 480,310 Z" fill="#09090b"/>
+  <path d="M 510,310 L 510,220 C 510,180 560,180 560,220 L 560,310 Z" fill="#09090b"/>
+  <path d="M 590,310 L 590,220 C 590,180 640,180 640,220 L 640,310 Z" fill="#09090b"/>
+  <path d="M 670,310 L 670,220 C 670,180 720,180 720,220 L 720,310 Z" fill="#09090b"/>
+
+  <!-- Colosseum Pillars with Torches -->
+  <rect x="385" y="140" width="30" height="170" fill="#27272a"/>
+  <!-- Fire Torches on central pillar -->
+  <polygon points="390,135 400,105 410,135" fill="#f59e0b" filter="url(#redGlow)"/>
+  <polygon points="395,130 400,115 405,130" fill="#ffffff"/>
+
+  <!-- War Banners -->
+  <polygon points="100,190 110,190 110,260 105,250 100,260" fill="#dc2626"/>
+  <polygon points="260,190 270,190 270,260 265,250 260,260" fill="#dc2626"/>
+  <polygon points="530,190 540,190 540,260 535,250 530,260" fill="#2563eb"/>
+  <polygon points="690,190 700,190 700,260 695,250 690,260" fill="#2563eb"/>
+
+  <!-- Sand Arena Ground -->
+  <polygon points="0,310 800,310 800,450 0,450" fill="#ca8a04"/>
+  <ellipse cx="400" cy="380" rx="350" ry="60" fill="#d97706"/>
+  
+  <!-- Crossed Diamond & Netherite Swords Symbol in center arena -->
+  <line x1="360" y1="340" x2="440" y2="420" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" filter="url(#redGlow)"/>
+  <line x1="440" y1="340" x2="360" y2="420" stroke="#52525b" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="400" cy="380" r="14" fill="#ef4444" filter="url(#redGlow)"/>
+
+  <rect x="20" y="390" width="230" height="40" rx="8" fill="#0f172a" fill-opacity="0.8" stroke="#ef4444" stroke-width="1"/>
+  <text x="35" y="415" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14" fill="#ffffff">★ PVP КОЛИЗЕЙ</text>
+</svg>

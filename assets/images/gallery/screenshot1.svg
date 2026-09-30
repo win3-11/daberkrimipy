@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#4338ca"/>
+      <stop offset="80%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#fed7aa" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Sky -->
+  <rect width="800" height="450" fill="url(#sky1)"/>
+  
+  <!-- Big Pixel Sun -->
+  <rect x="360" y="160" width="80" height="80" fill="url(#sunGrad)" filter="url(#glow)"/>
+
+  <!-- Voxel Clouds -->
+  <rect x="60" y="100" width="160" height="28" fill="url(#cloudGrad)"/>
+  <rect x="90" y="80" width="100" height="20" fill="url(#cloudGrad)"/>
+  <rect x="520" y="130" width="220" height="32" fill="url(#cloudGrad)"/>
+  <rect x="570" y="106" width="130" height="24" fill="url(#cloudGrad)"/>
+  
+  <!-- Floating Island -->
+  <polygon points="200,280 600,280 650,310 500,430 380,440 280,390 150,310" fill="#2d221b"/>
+  <polygon points="150,310 200,280 600,280 650,310 610,335 190,335" fill="#44352b"/>
+  <polygon points="150,310 200,280 600,280 650,310 630,318 170,318" fill="#15803d"/>
+  
+  <!-- Grass Layer with Pixel Blocks -->
+  <rect x="180" y="274" width="440" height="12" fill="#22c55e"/>
+  <rect x="220" y="286" width="20" height="15" fill="#16a34a"/>
+  <rect x="320" y="286" width="25" height="18" fill="#16a34a"/>
+  <rect x="460" y="286" width="30" height="12" fill="#16a34a"/>
+  
+  <!-- Castle Fortress on Island -->
+  <!-- Main Keep -->
+  <rect x="340" y="190" width="120" height="90" fill="#475569"/>
+  <!-- Keep Battlements -->
+  <rect x="340" y="180" width="20" height="12" fill="#334155"/>
+  <rect x="373" y="180" width="20" height="12" fill="#334155"/>
+  <rect x="407" y="180" width="20" height="12" fill="#334155"/>
+  <rect x="440" y="180" width="20" height="12" fill="#334155"/>
+  
+  <!-- Left Tower -->
+  <rect x="290" y="150" width="55" height="130" fill="#334155"/>
+  <polygon points="280,150 317,110 355,150" fill="#0284c7"/>
+  <rect x="308" y="170" width="18" height="24" rx="2" fill="#fef08a" opacity="0.9" filter="url(#glow)"/>
+  
+  <!-- Right Tower -->
+  <rect x="455" y="150" width="55" height="130" fill="#334155"/>
+  <polygon points="445,150 482,110 520,150" fill="#0284c7"/>
+  <rect x="473" y="170" width="18" height="24" rx="2" fill="#fef08a" opacity="0.9" filter="url(#glow)"/>
+  
+  <!-- Central High Spire & Emerald Beacon -->
+  <rect x="375" y="130" width="50" height="60" fill="#1e293b"/>
+  <polygon points="365,130 400,80 435,130" fill="#0369a1"/>
+  <!-- Beacon Beam -->
+  <rect x="395" y="0" width="10" height="280" fill="#38bdf8" opacity="0.75" filter="url(#glow)"/>
+  <rect x="398" y="0" width="4" height="280" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Castle Gate & Lanterns -->
+  <rect x="382" y="235" width="36" height="45" rx="3" fill="#0f172a"/>
+  <circle cx="370" cy="245" r="4" fill="#fbbf24" filter="url(#glow)"/>
+  <circle cx="430" cy="245" r="4" fill="#fbbf24" filter="url(#glow)"/>
+  
+  <!-- Waterfall off Island -->
+  <rect x="530" y="280" width="16" height="130" fill="#38bdf8" opacity="0.85"/>
+  <rect x="534" y="280" width="8" height="130" fill="#e0f2fe" opacity="0.9"/>
+  
+  <!-- Decorative Text Banner Overlay -->
+  <rect x="20" y="390" width="220" height="40" rx="8" fill="#0f172a" fill-opacity="0.75" stroke="#38bdf8" stroke-width="1"/>
+  <text x="35" y="415" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14" fill="#ffffff">★ НЕБЕСНЫЙ СПАВН</text>
+</svg>
+

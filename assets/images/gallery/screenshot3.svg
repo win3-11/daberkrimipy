@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <radialGradient id="endSky" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1e1035"/>
+      <stop offset="60%" stop-color="#090514"/>
+      <stop offset="100%" stop-color="#020005"/>
+    </radialGradient>
+    <linearGradient id="beamGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7e22ce"/>
+    </linearGradient>
+    <filter id="purpleGlow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#endSky)"/>
+
+  <!-- Starry / Particle dust -->
+  <circle cx="80" cy="90" r="1.5" fill="#e9d5ff" opacity="0.6"/>
+  <circle cx="210" cy="40" r="1" fill="#e9d5ff" opacity="0.8"/>
+  <circle cx="340" cy="110" r="2" fill="#c084fc" opacity="0.7"/>
+  <circle cx="560" cy="70" r="1.5" fill="#e9d5ff" opacity="0.5"/>
+  <circle cx="710" cy="120" r="2" fill="#c084fc" opacity="0.6"/>
+  <circle cx="670" cy="30" r="1" fill="#e9d5ff" opacity="0.7"/>
+  <circle cx="150" cy="180" r="1.5" fill="#a855f7" opacity="0.6"/>
+
+  <!-- Endstone Main Island -->
+  <polygon points="100,340 700,340 750,380 620,450 180,450 50,380" fill="#eab308" opacity="0.85"/>
+  <polygon points="100,340 700,340 720,360 80,360" fill="#fef08a"/>
+  
+  <!-- Endstone crater texture -->
+  <ellipse cx="250" cy="370" rx="30" ry="12" fill="#ca8a04"/>
+  <ellipse cx="550" cy="380" rx="40" ry="15" fill="#ca8a04"/>
+  <ellipse cx="400" cy="400" rx="60" ry="18" fill="#ca8a04"/>
+
+  <!-- Obsidian Pillar Left -->
+  <polygon points="160,180 220,180 225,350 155,350" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <!-- Crystal on Left Pillar -->
+  <polygon points="190,150 205,165 190,180 175,165" fill="#f43f5e" filter="url(#purpleGlow)"/>
+  <polygon points="190,155 200,165 190,175 180,165" fill="#ffffff"/>
+  <!-- Crystal Beam -->
+  <line x1="190" y1="165" x2="380" y2="100" stroke="#d946ef" stroke-width="4" opacity="0.8" filter="url(#purpleGlow)"/>
+
+  <!-- Obsidian Pillar Center/Back -->
+  <polygon points="370,220 430,220 435,360 365,360" fill="#090d16" stroke="#1e293b" stroke-width="2"/>
+  <polygon points="400,195 413,208 400,220 387,208" fill="#a855f7" filter="url(#purpleGlow)"/>
+
+  <!-- Obsidian Pillar Right -->
+  <polygon points="580,160 645,160 650,360 575,360" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <!-- Crystal on Right Pillar -->
+  <polygon points="612,130 627,145 612,160 597,145" fill="#f43f5e" filter="url(#purpleGlow)"/>
+  <polygon points="612,135 622,145 612,155 602,145" fill="#ffffff"/>
+  <!-- Crystal Beam -->
+  <line x1="612" y1="145" x2="420" y2="100" stroke="#d946ef" stroke-width="4" opacity="0.8" filter="url(#purpleGlow)"/>
+
+  <!-- Ender Dragon Silhouette & Wings -->
+  <g transform="translate(350, 60)">
+    <!-- Dragon Body -->
+    <ellipse cx="50" cy="40" rx="35" ry="12" fill="#090514"/>
+    <!-- Head -->
+    <polygon points="85,35 110,25 115,40 85,45" fill="#020005"/>
+    <!-- Glowing Purple Eyes -->
+    <circle cx="102" cy="30" r="3" fill="#ec4899" filter="url(#purpleGlow)"/>
+    <circle cx="102" cy="30" r="1.5" fill="#ffffff"/>
+    <!-- Dragon Wings -->
+    <polygon points="40,32 -20,-20 30,-5 60,30" fill="#1e1035" stroke="#a855f7" stroke-width="1.5"/>
+    <polygon points="50,32 110,-20 80,-5 65,30" fill="#1e1035" stroke="#a855f7" stroke-width="1.5"/>
+    <!-- Tail -->
+    <polygon points="20,40 -25,48 -35,45 15,44" fill="#090514"/>
+  </g>
+
+  <!-- Exit Portal in Center -->
+  <ellipse cx="400" cy="355" rx="45" ry="16" fill="#000000" stroke="#475569" stroke-width="6"/>
+  <ellipse cx="400" cy="355" rx="38" ry="12" fill="#3b0764"/>
+  <rect x="396" y="315" width="8" height="40" fill="#64748b"/>
+  <polygon points="392,315 400,300 408,315" fill="#475569"/>
+  <circle cx="400" cy="298" r="7" fill="#1e1b4b" stroke="#7e22ce" stroke-width="2"/>
+
+  <rect x="20" y="390" width="230" height="40" rx="8" fill="#0f172a" fill-opacity="0.8" stroke="#a855f7" stroke-width="1"/>
+  <text x="35" y="415" font-family="'Montserrat', sans-serif" font-weight="700" font-size="14" fill="#ffffff">★ БИТВА В ЭНДЕ</text>
+</svg>
+

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ДаберКримипу 2.0 — Перерождение сервера Minecraft</title>
+  <meta name="description" content="Официальный сайт сервера ДаберКримипу 2.0. Вторая версия легендарного проекта: новая сборка модов, подключение через Porthole, дружное сообщество!">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       ШАПКА САЙТА (HEADER / NAVBAR)
+  =================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Логотип сервера -->
+      <a href="index.html" class="brand-logo">
+        <img src="assets/images/logo.jpg" alt="ДаберКримипу 2.0" class="brand-icon">
+        <div class="brand-name">Дабер<span class="brand-highlight">Кримипу</span> <span class="brand-ver">2.0</span></div>
+      </a>
+
+      <!-- Меню навигации -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link active">Главная</a>
+        <a href="pages/how-to-play.html" class="nav-link">Как подключиться</a>
+        <a href="pages/rules.html" class="nav-link">Правила</a>
+        <a href="pages/gallery.html" class="nav-link">Галерея</a>
+      </nav>
+
+      <!-- Кнопки в шапке -->
+      <div class="header-actions">
+        <!-- Ссылка на скачивание сборки с Google Диска -->
+        <a href="https://drive.google.com/file/d/18PqqBYFJ3Ffp7dJQg8Y49mitR_ToLpa6/view?usp=drive_link" target="_blank" rel="noopener" class="btn-modpack" style="padding: 0.65rem 1.2rem; font-size: 0.85rem; font-weight: 700; border-radius: var(--radius-sm); display: flex; align-items: center; gap: 0.5rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+          </svg>
+          Скачать сборку
+        </a>
+
+        <!-- Бургер-кнопка для мобильных -->
+        <button class="mobile-toggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       ГЛАВНЫЙ ЭКРАН (HERO SECTION)
+  =================================================================== -->
+  <main>
+    <section class="hero-section">
+      <div class="hero-ambient-glow" style="background: radial-gradient(circle, rgba(168, 85, 247, 0.2) 0%, rgba(245, 158, 11, 0.1) 50%, transparent 70%);"></div>
+
+      <div class="container hero-content">
+        <!-- Бейдж статуса: Вторая версия / Fabric 26.2 -->
+        <div class="server-status-pill" style="border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.12);">
+          <span class="status-dot" style="background-color: var(--gold); box-shadow: 0 0 10px var(--gold);"></span>
+          <span class="status-text" style="color: #fde047;">СЕЗОН 2.0 • ПЕРЕРОЖДЕНИЕ</span>
+          <span class="server-version-tag">Fabric 26.2</span>
+        </div>
+
+        <!-- Главный заголовок Hero -->
+        <h1 class="hero-title">
+          Сервер перерождён <br>
+          <span class="text-gradient">в новом обличии!</span>
+        </h1>
+
+        <!-- Описание второй версии -->
+        <p class="hero-subtitle">
+          Встречайте вторую версию сервера <strong>«ДаберКримипу 2.0»</strong> с официальным сайтом, 
+          обязательной сборкой модов и ресурспаков, кастомным транспортом и захватывающими ивентами. 
+          Подключаемся через <strong>Porthole (Steam)</strong>!
+        </p>
+
+        <!-- Главные CTA кнопки -->
+        <div class="hero-buttons-row" style="margin-bottom: 2.5rem;">
+          <!-- Скачать сборку модов -->
+          <a href="https://drive.google.com/file/d/18PqqBYFJ3Ffp7dJQg8Y49mitR_ToLpa6/view?usp=drive_link" target="_blank" rel="noopener" class="btn-primary" style="background: linear-gradient(135deg, #a855f7, #6366f1); box-shadow: 0 8px 25px rgba(168, 85, 247, 0.45);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+            <span>Скачать сборку с Google Диска</span>
+          </a>
+
+          <!-- Инструкция по подключению -->
+          <a href="pages/how-to-play.html" class="btn-secondary" style="border-color: rgba(245, 158, 11, 0.4); background: rgba(245, 158, 11, 0.08);">
+            <span>Как подключиться (Porthole)</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Плашка быстрого копирования / Porthole инфо -->
+        <div class="ip-copy-container">
+          <div class="ip-copy-box js-copy-ip-box" title="Нажмите, чтобы открыть Telegram с кодом Porthole">
+            <div class="ip-details">
+              <span class="ip-label">Способ подключения:</span>
+              <span class="ip-address" style="font-family: inherit; font-size: 1rem; font-weight: 700; color: #fde047;">
+                🎮 Porthole (Steam) — код в Telegram
+              </span>
+            </div>
+            <button class="btn-copy-action js-telegram-btn" type="button" style="background: linear-gradient(135deg, #229ED9, #1a7ab5);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+              </svg>
+              <span>Telegram канал</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Ссылки на Discord и Telegram -->
+        <div class="hero-buttons-row">
+          <a href="https://discord.gg/kkFQBQvndr" target="_blank" rel="noopener" class="btn-secondary btn-discord">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+            <span>Наш Discord сервер</span>
+          </a>
+
+          <a href="https://t.me/+4mJLfKfZxhpmYTU8" target="_blank" rel="noopener" class="btn-secondary btn-telegram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.17 3.35-1.37 3.73-1.38.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+            </svg>
+            <span>Telegram канал</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         ОСОБЕННОСТИ ДАБЕРКРИМИПУ 2.0
+    =================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" style="color: var(--gold);">ЭПОХА ПЕРЕРОЖДЕНИЯ</span>
+          <h2 class="section-title">Что нового в версии 2.0?</h2>
+          <p class="section-desc">
+            Мы полностью переосмыслили проект: обновили концепт, запустили полноценный сайт, улучшили оптимизацию и подготовили единую сборку.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Карточка 1: Перерождение -->
+          <div class="feature-card" style="--card-accent: #a855f7; --card-glow: rgba(168, 85, 247, 0.45);">
+            <div class="feature-icon-wrapper" style="color: #c084fc;">🔮</div>
+            <h3>Перерождение проекта</h3>
+            <p>
+              Новый виток истории сервера с собственным сайтом, продуманными правилами и обновленной концепцией развития мира.
+            </p>
+          </div>
+
+          <!-- Карточка 2: Сборка модов -->
+          <div class="feature-card" style="--card-accent: #f59e0b; --card-glow: var(--gold-glow);">
+            <div class="feature-icon-wrapper" style="color: #fbbf24;">📦</div>
+            <h3>Обязательные моды и ресурспаки</h3>
+            <p>
+              Единый архив со всеми необходимыми модами и ресурспаками на Fabric 26.2. Внутри есть текстовая инструкция — просто распакуй и играй!
+            </p>
+          </div>
+
+          <!-- Карточка 3: Porthole -->
+          <div class="feature-card" style="--card-accent: #00d2ff; --card-glow: var(--diamond-glow);">
+            <div class="feature-icon-wrapper" style="color: #38bdf8;">🌐</div>
+            <h3>Подключение через Porthole</h3>
+            <p>
+              Играйте без лагов и задержек через бесплатную утилиту Porthole из Steam. Простое подключение в пару кликов без возни с портами.
+            </p>
+          </div>
+
+          <!-- Карточка 4: Транспорт и стройка -->
+          <div class="feature-card" style="--card-accent: #10b981; --card-glow: var(--emerald-glow);">
+            <div class="feature-icon-wrapper" style="color: #34d399;">🚗</div>
+            <h3>Транспорт и инфраструктура</h3>
+            <p>
+              Машины, стоянки, широкие проспекты и горные аванпосты. Стройте масштабные города и перемещайтесь на собственном транспорте.
+            </p>
+          </div>
+
+          <!-- Карточка 5: Ивенты и мемы -->
+          <div class="feature-card" style="--card-accent: #ef4444; --card-glow: rgba(239, 68, 68, 0.45);">
+            <div class="feature-icon-wrapper" style="color: #f87171;">💥</div>
+            <h3>«Это ловушка!» и море фана</h3>
+            <p>
+              Неожиданные засады, совместные рейды, боевые столкновения и живые мемы прямо в игровом процессе. Скучно не будет никогда!
+            </p>
+          </div>
+
+          <!-- Карточка 6: Живое комьюнити -->
+          <div class="feature-card" style="--card-accent: #5865f2; --card-glow: rgba(88, 101, 242, 0.45);">
+            <div class="feature-icon-wrapper" style="color: #818cf8;">👥</div>
+            <h3>Discord и Telegram</h3>
+            <p>
+              Вся жизнь сервера кипит в нашем Discord и Telegram: голосовой чат, новости, обсуждение планов постройки столицы и помощь новичкам.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         ПРЕВЬЮ ГАЛЕРЕИ НА ГЛАВНОЙ СТРАНИЦЕ
+    =================================================================== -->
+    <section class="section" style="background: rgba(0,0,0,0.25);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" style="color: var(--gold);">КАДРЫ ИЗ ИГРЫ</span>
+          <h2 class="section-title">Атмосфера ДаберКримипу 2.0</h2>
+          <p class="section-desc">
+            Посмотрите на закаты, горные базы, генплан столицы и легендарные моменты с сервера.
+          </p>
+        </div>
+
+        <!-- Динамическая сетка скриншотов -->
+        <div class="gallery-grid"></div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="pages/gallery.html" class="btn-primary" style="background: linear-gradient(135deg, #a855f7, #6366f1);">
+            <span>Смотреть всю галерею</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       ПОДВАЛ САЙТА (FOOTER)
+  =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/images/logo.jpg" alt="ДаберКримипу 2.0" class="brand-icon">
+            <div class="brand-name">Дабер<span class="brand-highlight">Кримипу</span> <span class="brand-ver">2.0</span></div>
+          </a>
+          <p>
+            Вторая версия сервера Minecraft. Новое рождение, уникальная сборка модов и незабываемая атмосфера.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Навигация</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Главная страница</a></li>
+            <li><a href="pages/how-to-play.html">Как подключиться (Porthole)</a></li>
+            <li><a href="pages/rules.html">Правила сервера</a></li>
+            <li><a href="pages/gallery.html">Галерея скриншотов</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Сообщество</h4>
+          <ul class="footer-links">
+            <li><a href="https://discord.gg/kkFQBQvndr" target="_blank" rel="noopener">Discord сервер</a></li>
+            <li><a href="https://t.me/+4mJLfKfZxhpmYTU8" target="_blank" rel="noopener">Telegram канал</a></li>
+            <li><a href="https://drive.google.com/file/d/18PqqBYFJ3Ffp7dJQg8Y49mitR_ToLpa6/view?usp=drive_link" target="_blank" rel="noopener">Сборка на Google Диске</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Подключение</h4>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.8rem;">
+            Код Porthole доступен в <strong>Telegram</strong>:
+          </p>
+          <a href="https://t.me/+4mJLfKfZxhpmYTU8" target="_blank" rel="noopener" class="btn-telegram" style="padding: 0.6rem 1rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 700; display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none;">
+            <span>Открыть Telegram канал</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="disclaimer">
+          © 2026 ДаберКримипу 2.0. Не является официальным продуктом Mojang или Microsoft.
+        </div>
+        <div class="social-links">
+          <a href="https://discord.gg/kkFQBQvndr" target="_blank" rel="noopener" class="social-btn" title="Discord">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+          </a>
+          <a href="https://t.me/+4mJLfKfZxhpmYTU8" target="_blank" rel="noopener" class="social-btn" title="Telegram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.17 3.35-1.37 3.73-1.38.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

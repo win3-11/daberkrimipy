@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Правила сервера — ДаберКримипу 2.0</title>
+  <meta name="description" content="Свод правил сервера ДаберКримипу 2.0: поведение в чате, игровой процесс, безопасность, защита от гриферства и система наказаний.">
+  
+  <link rel="icon" type="image/jpeg" href="../assets/images/logo.jpg">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       ШАПКА САЙТА (HEADER / NAVBAR)
+  =================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <img src="../assets/images/logo.jpg" alt="ДаберКримипу 2.0" class="brand-icon">
+        <div class="brand-name">Дабер<span class="brand-highlight">Кримипу</span> <span class="brand-ver">2.0</span></div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="../index.html" class="nav-link">Главная</a>
+        <a href="how-to-play.html" class="nav-link">Как подключиться</a>
+        <a href="rules.html" class="nav-link active">Правила</a>
+        <a href="gallery.html" class="nav-link">Галерея</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://discord.gg/kkFQBQvndr" target="_blank" rel="noopener" class="btn-discord" style="padding: 0.65rem 1.2rem; font-size: 0.85rem; font-weight: 700; border-radius: var(--radius-sm); display: flex; align-items: center; gap: 0.5rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+          </svg>
+          Discord
+        </a>
+
+        <button class="mobile-toggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       ОСНОВНОЙ КОНТЕНТ (ПРАВИЛА)
+  =================================================================== -->
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="color: var(--gold);">КОДЕКС РОЛЕВОЙ ИГРЫ · 2.0</span>
+        <h1 class="section-title">Правила ДаберКримипу</h1>
+        <p class="section-desc">
+          ДаберКримипу — это <strong>ролевой сервер</strong>. Здесь каждый игрок — персонаж со своей историей, фракцией и репутацией. Кодекс — основа справедливой и честной игры для всех. Незнание правил не освобождает от ответственности.
+        </p>
+      </div>
+
+      <!-- Поиск и Фильтр категорий -->
+      <div class="rules-controls">
+        <div class="rules-search-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="rules-search-input" placeholder="Поиск по правилам (например: читы, мат, гриф, дюп, пвп)...">
+        </div>
+
+        <div class="category-tabs">
+          <button class="category-tab active" data-category="all">Все правила</button>
+          <button class="category-tab" data-category="general">1. Общие положения</button>
+          <button class="category-tab" data-category="chat">2. Правила чата</button>
+          <button class="category-tab" data-category="rp">3. Ролевая игра</button>
+          <button class="category-tab" data-category="gameplay">4. Геймплей и PvP</button>
+          <button class="category-tab" data-category="crime">5. Криминал и ограбления</button>
+          <button class="category-tab" data-category="security">6. Читы и безопасность</button>
+        </div>
+      </div>
+
+      <!-- Интерактивный список правил -->
+      <div class="rules-list">
+
+        <!-- ===== 1. ОБЩИЕ ПОЛОЖЕНИЯ ===== -->
+        <div class="rule-accordion-item" data-category="general">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">1.1</span>
+              <span class="rule-title">Уважение к администрации и игрокам</span>
+            </div>
+            <span class="rule-badge badge-warn">Предупреждение</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Запрещены публичные провокации, травля, токсичное поведение, разжигание розни и оскорбления участников сообщества в игре, Discord и Telegram. Помни: ты играешь персонажем, но за экраном — живой человек.
+              <div class="rule-penalty">
+                Наказание: Предупреждение → Мут от 2 часов до 1 суток при повторе.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule-accordion-item" data-category="general">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">1.2</span>
+              <span class="rule-title">Реклама сторонних проектов</span>
+            </div>
+            <span class="rule-badge badge-perm">Перманентный бан</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Запрещено распространение ссылок на другие сервера Minecraft, вредоносные сайты или несогласованные ресурсы в любом виде.
+              <div class="rule-penalty">
+                Наказание: Перманентный бан без права амнистии.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule-accordion-item" data-category="general">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">1.3</span>
+              <span class="rule-title">Выдача себя за организаторов</span>
+            </div>
+            <span class="rule-badge badge-ban">Бан на 7 дней</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Запрещено вводить участников в заблуждение, выдавая себя за создателей или модераторов проекта ДаберКримипу.
+              <div class="rule-penalty">
+                Наказание: Блокировка от 7 до 30 дней.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 2. ПРАВИЛА ЧАТА ===== -->
+        <div class="rule-accordion-item" data-category="chat">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">2.1</span>
+              <span class="rule-title">Спам, флуд и КАПС</span>
+            </div>
+            <span class="rule-badge badge-mute">Мут от 30 мин</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Запрещена отправка повторяющихся сообщений, бессмысленных символов, флуд командами и злоупотребление CAPS LOCK.
+              <div class="rule-penalty">
+                Наказание: Мут чата от 30 минут до 3 часов.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule-accordion-item" data-category="chat">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">2.2</span>
+              <span class="rule-title">Оскорбления и неадекватное поведение</span>
+            </div>
+            <span class="rule-badge badge-mute">Мут от 1 часа</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Запрещены прямые оскорбления родственников, переход на личности и деструктивное поведение в голосовом и текстовом чатах.
+              <div class="rule-penalty">
+                Наказание: Мут от 1 до 12 часов.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule-accordion-item" data-category="chat">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">2.3</span>
+              <span class="rule-title">Разграничение RP-чата и OOC (out of character)</span>
+            </div>
+            <span class="rule-badge badge-warn">Предупреждение</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Весь текст в игровом чате считается репликой персонажа (IC — in character). Для внеигрового общения используй скобки: <strong>(( сообщение ))</strong>. Смешивать IC и OOC без маркировки — запрещено.
+              <div class="rule-penalty">
+                Наказание: Предупреждение → Мут при систематическом нарушении.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 3. РОЛЕВАЯ ИГРА ===== -->
+        <div class="rule-accordion-item" data-category="rp">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">3.1</span>
+              <span class="rule-title">Обязательное соблюдение RP (roleplay)</span>
+            </div>
+            <span class="rule-badge badge-warn">Предупреждение</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Каждый участник обязан отыгрывать своего персонажа. Запрещено выходить из роли (break character) посреди активного RP-сценария без уважительной причины. Исключения: технические неполадки, реальная необходимость.
+              <div class="rule-penalty">
+                Наказание: Устное предупреждение → При систематическом нарушении — временный бан от 3 дней.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule-accordion-item" data-category="rp">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">3.2</span>
+              <span class="rule-title">Запрет метагейминга</span>
+            </div>
+            <span class="rule-badge badge-ban">Бан на 7 дней</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Метагейминг — использование информации, которую твой персонаж не мог знать по сюжету (из Discord, Telegram, стримов и т.п.). Запрещено. Играй только тем, что узнал внутри RP.
+              <div class="rule-penalty">
+                Наказание: Бан от 7 дней. При грубом нарушении — Перманентный.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule-accordion-item" data-category="rp">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">3.3</span>
+              <span class="rule-title">Запрет пауэргейминга</span>
+            </div>
+            <span class="rule-badge badge-warn">Предупреждение</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Пауэргейминг — навязывание другому игроку действий или исходов без его согласия (например: «Я тебя обезоружил, ты ничего не можешь сделать»). Все RP-действия, влияющие на чужого персонажа, оговариваются заранее или описываются как попытка, а не факт.
+              <div class="rule-penalty">
+                Наказание: Предупреждение → Бан на 3 дня при рецидиве.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule-accordion-item" data-category="rp">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">3.4</span>
+              <span class="rule-title">Правило «ценности жизни» (FearRP / ValtLife)</span>
+            </div>
+            <span class="rule-badge badge-warn">Предупреждение</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Твой персонаж ценит свою жизнь. Нельзя вести себя безрассудно, когда тебя держат под прицелом или в явно безвыходной ситуации. Самоубийство персонажа ради избежания RP-последствий — запрещено (FearRP).
+              <div class="rule-penalty">
+                Наказание: Предупреждение → Временный бан при систематическом игнорировании.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 4. ГЕЙМПЛЕЙ И PVP ===== -->
+        <div class="rule-accordion-item" data-category="gameplay">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">4.1</span>
+              <span class="rule-title">Гриферство и умышленная порча чужого имущества</span>
+            </div>
+            <span class="rule-badge badge-ban">Бан на 14 дней</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Запрещено разрушение чужих построек, воровство из незаприваченных сундуков без сценарного обоснования, залив лавой и уничтожение чужого транспорта. Все действия логируются и откатываются.
+              <div class="rule-penalty">
+                Наказание: Откат действий + Бан от 14 дней до Перманентного.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule-accordion-item" data-category="gameplay">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">4.2</span>
+              <span class="rule-title">PvP, засады и рейды</span>
+            </div>
+            <span class="rule-badge badge-warn">Предупреждение</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Боевые столкновения — часть RP! Однако запрещено убивать без RP-обоснования (Deathmatching), атаковать новичков на спауне и нападать в официально объявленных мирных зонах без особого сценария.
+              <div class="rule-penalty">
+                Наказание: Возврат потерянного лута пострадавшему + Временный бан при рецидиве.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule-accordion-item" data-category="gameplay">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">4.3</span>
+              <span class="rule-title">Лаг-машины и краш-механизмы</span>
+            </div>
+            <span class="rule-badge badge-ban">Бан на 30 дней</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Запрещено создание механизмов, преднамеренно снижающих производительность сервера, дроп-петель и перегружающих чанки структур.
+              <div class="rule-penalty">
+                Наказание: Удаление схемы + Бан на 30 дней.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== ВАЖНОЕ ПРАВИЛО: ВЫХОД ЗА КАРТУ ===== -->
+        <div class="rule-accordion-item" data-category="gameplay" style="border-color: rgba(239, 68, 68, 0.5); box-shadow: 0 0 20px rgba(239, 68, 68, 0.1);">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index" style="color: #ef4444;">4.4</span>
+              <span class="rule-title">🚫 Выход за пределы игровой карты</span>
+            </div>
+            <span class="rule-badge badge-perm">Бедрок-тюрьма</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Покидать официальные границы карты <strong>строго запрещено</strong> — любым способом (глитч, полёт, телепорт и т.п.). Мир за границей не является частью RP-вселенной ДаберКримипу и намеренно не поддерживается.
+              <div class="rule-penalty" style="background: rgba(239, 68, 68, 0.12); border-left-color: #ef4444; color: #fca5a5;">
+                ⛏️ Наказание: <strong>Бедрок-тюрьма</strong> — нарушитель помещается в изолированную камеру из бедрока без возможности выбраться самостоятельно. Срок определяет администрация (от нескольких часов до перманентного заключения).
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 5. КРИМИНАЛ И ОГРАБЛЕНИЯ ===== -->
+        <div class="rule-accordion-item" data-category="crime">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">5.1</span>
+              <span class="rule-title">Ограбления — общие правила</span>
+            </div>
+            <span class="rule-badge badge-warn">Предупреждение</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Ограбления — законная часть RP. Однако они должны быть обыграны, а не выполнены «в тишине». Перед ограблением обязателен RP-диалог: угроза, требование и возможность жертвы отреагировать.
+              <div class="rule-penalty">
+                Наказание: Возврат имущества + Предупреждение при нарушении RP-процедуры.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule-accordion-item" data-category="crime">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">5.2</span>
+              <span class="rule-title">Запрет ограблений в людных и общественных местах</span>
+            </div>
+            <span class="rule-badge badge-ban">Бан на 3 дня</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Ограбления <strong>запрещены</strong> в людных и общественных местах: спаун, городской рынок, главная площадь, банки, таверны и любые другие точки скопления игроков. Это нарушает атмосферу и мешает другим участникам.
+              <br><br>
+              Ограбление допустимо только: в малолюдных районах, в глуши, на дорогах вдали от города, а также в рамках заранее согласованного сценария между сторонами.
+              <div class="rule-penalty">
+                Наказание: Возврат имущества жертве + Бан на 3 дня. При рецидиве — до 14 дней.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule-accordion-item" data-category="crime">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">5.3</span>
+              <span class="rule-title">Лимит криминальных действий за сессию</span>
+            </div>
+            <span class="rule-badge badge-warn">Предупреждение</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Нельзя грабить одного и того же игрока чаще чем раз в 2 часа. Массовые ограбления всего сервера без RP-обоснования запрещены.
+              <div class="rule-penalty">
+                Наказание: Предупреждение → Временный бан за систематическое злоупотребление.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule-accordion-item" data-category="crime">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">5.4</span>
+              <span class="rule-title">Захват заложников</span>
+            </div>
+            <span class="rule-badge badge-warn">Предупреждение</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Захват заложника допустим как RP-сценарий, но требует обязательного согласия игрока на длительное удержание (OOC-договорённость). Максимальное время содержания без согласия — 20 минут реального времени.
+              <div class="rule-penalty">
+                Наказание: Освобождение заложника администрацией + Бан на 3–7 дней.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 6. ЧИТЫ И БЕЗОПАСНОСТЬ ===== -->
+        <div class="rule-accordion-item" data-category="security">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">6.1</span>
+              <span class="rule-title">Использование читов, X-Ray и сторонних хаков</span>
+            </div>
+            <span class="rule-badge badge-perm">Перманентный бан</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Категорически запрещены любые чит-клиенты (Meteor, Aristois, Wurst и т.п.), X-Ray моды и текстуры, Fly, Speed, KillAura, AutoTotem и боты.
+              <div class="rule-penalty">
+                Наказание: Мгновенный Перманентный бан без возможности обжалования.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule-accordion-item" data-category="security">
+          <div class="rule-header">
+            <div class="rule-title-group">
+              <span class="rule-index">6.2</span>
+              <span class="rule-title">Дюп предметов и сокрытие уязвимостей</span>
+            </div>
+            <span class="rule-badge badge-perm">Перманентный бан</span>
+            <svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="rule-body">
+            <div class="rule-body-content">
+              Запрещено использование багов модов и игры для нелегального размножения ресурсов. При обнаружении бага — немедленно сообщи куратору в Telegram!
+              <div class="rule-penalty">
+                Наказание: Полный вайп инвентаря + Бан всех причастных.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Блок апелляции — Telegram -->
+      <div style="background: var(--bg-card); border: 1px solid var(--border-card); border-radius: var(--radius-lg); padding: 2.5rem; text-align: center; max-width: 860px; margin: 4rem auto 0; box-shadow: var(--shadow-card);">
+        <h3 style="font-size: 1.4rem; color: #fff; margin-bottom: 0.8rem;">Хотите обжаловать блокировку?</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+          Если вы считаете, что наказание выдано по ошибке — напишите администрации в чат нашего <strong>Telegram-канала</strong>. Все апелляции рассматриваются индивидуально.
+        </p>
+        <a href="https://t.me/+4mJLfKfZxhpmYTU8" target="_blank" rel="noopener" class="btn-telegram" style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.85rem 1.6rem; border-radius: var(--radius-md); font-weight: 700; text-decoration: none;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+          </svg>
+          <span>Написать в Telegram</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===================================================================
+       ПОДВАЛ САЙТА (FOOTER)
+  =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand-logo">
+            <img src="../assets/images/logo.jpg" alt="ДаберКримипу 2.0" class="brand-icon">
+            <div class="brand-name">Дабер<span class="brand-highlight">Кримипу</span> <span class="brand-ver">2.0</span></div>
+          </a>
+          <p>
+            Вторая версия сервера Minecraft. Новое рождение, уникальная сборка модов и незабываемая атмосфера.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Навигация</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Главная страница</a></li>
+            <li><a href="how-to-play.html">Как подключиться (Porthole)</a></li>
+            <li><a href="rules.html">Правила сервера</a></li>
+            <li><a href="gallery.html">Галерея скриншотов</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Сообщество</h4>
+          <ul class="footer-links">
+            <li><a href="https://discord.gg/kkFQBQvndr" target="_blank" rel="noopener">Discord сервер</a></li>
+            <li><a href="https://t.me/+4mJLfKfZxhpmYTU8" target="_blank" rel="noopener">Telegram канал</a></li>
+            <li><a href="https://drive.google.com/file/d/18PqqBYFJ3Ffp7dJQg8Y49mitR_ToLpa6/view?usp=drive_link" target="_blank" rel="noopener">Сборка на Google Диске</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Подключение</h4>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.8rem;">
+            Подключайтесь через <strong>Porthole в Steam</strong>:
+          </p>
+          <a href="https://t.me/+4mJLfKfZxhpmYTU8" target="_blank" rel="noopener" class="btn-telegram" style="padding: 0.6rem 1rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 700; display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none;">
+            <span>Код Porthole в Telegram</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="disclaimer">
+          © 2026 ДаберКримипу 2.0. Не является официальным продуктом Mojang или Microsoft.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
